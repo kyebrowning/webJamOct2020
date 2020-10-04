@@ -12,7 +12,7 @@
   <script src="js/scripts.js"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,9 +20,9 @@
     <div class="topnav" id="myTopnav">
       <ul class='nav-align-right'>
         <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Maize Runner</a></li>
-        <li><a href="www.thecodecavern.com">The Cavern</a></li>
-        <li><a href="#">Buy Tickets</a></li>
+        <li><a href="maize-runner.html">Maize Runner</a></li>
+        <li><a href="https://www.thecodecavern.com/" target='_blank'>The Cavern</a></li>
+        <li><a href="#buy-tickets">Buy Tickets</a></li>
       </ul>
     </div>
 
@@ -30,10 +30,21 @@
       <img src="./imgs/hydeaway-logo.png" class='hero-logo' width='100%'>
       <div class='hero-txt'>
         <h1>You're Safe Here...</h1>
-        <h3>until you want to leave</h3> 
+        <h3 id='scary-text'>until you want to leave</h3> 
+        <script>
+          window.onscroll = function() {myFunction()};
+          
+          function myFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+              document.getElementById('scary-text').style.opacity = '1';
+            } else {
+              document.getElementById('scary-text').style.opacity = '';
+            }
+          }
+          </script>
       </div>
 
-      <button class='hero-button'>Buy Tickets</button>
+      <button class='hero-button'><a href='#buy-tickets'>Buy Tickets</a></button>
 
     </div>
 
@@ -53,7 +64,7 @@
     <div class='price-container'>
       <img src="./imgs/friday-pass.png" class='friday-pass' width='370'>
       <img src="./imgs/weekend-pass.png" class='weekend-pass' width='370'>
-      <button class='price-button'>Buy Tickets Now!</button>
+      <button id='buy-tickets' class='price-button'>Buy Tickets Now!</button>
     </div>
     
     <div class='footernav'>

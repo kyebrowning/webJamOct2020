@@ -90,11 +90,12 @@ li {
 .hero-txt h1 {
     font-size: 45px;
     margin-bottom: 0px;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .hero-txt h3 {
     margin-top: 5px;
-    /*opacity: 0;*/
+    opacity: 0;
 }
 
 .hero-button {
@@ -109,6 +110,15 @@ li {
     color: #eca72c;
     border: 2px solid #eca72c;
     border-radius: 5px;
+}
+
+.hero-button a {
+    text-decoration: none;
+    color: #eca72c;
+}
+
+.hero-button a:hover {
+    color: #221E22;
 }
 
 .hero-button:hover, .price-button:hover {
