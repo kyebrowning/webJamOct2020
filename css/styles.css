@@ -9,7 +9,7 @@ body{
 
 .container {
     display: grid;
-    grid-template-rows: 50px 1fr 1fr 1fr 150px;
+    grid-template-rows: 50px 1fr 1fr 1fr 50px;
     grid-template-columns: 15% auto 15%;
 }
 
@@ -68,16 +68,23 @@ li {
     grid-column: 1/end;
     display: grid;
     grid-template-columns: 25% auto 25%;
+    grid-template-rows: 5% auto 10px auto 75px auto 5%;
     align-content: center;
+    align-self: center;
+}
+
+.hero-logo {
+    grid-row: 2;
+    grid-column: 2;
     align-self: center;
 }
 
 .hero-txt {
     color: white;
     grid-column: 2;
+    grid-row: 4;
     text-align: right;
     justify-self: center;
-    padding-bottom: 100px;
 }
 
 .hero-txt h1 {
@@ -87,12 +94,15 @@ li {
 
 .hero-txt h3 {
     margin-top: 5px;
+    /*opacity: 0;*/
 }
 
 .hero-button {
-    grid-column: 2;  
+    grid-column: 2;
+    grid-row: 6;  
     width: 250px;
     justify-self: center;
+    align-self: center;
     height: 50px;
     font-size: 24px;
     background-color: transparent;
@@ -180,4 +190,11 @@ li {
     color: #eca72c;
     border: 2px solid #eca72c;
     border-radius: 5px;
+}
+
+.footernav {
+    background-color: #EE5622;
+    color: #221E22;
+    grid-column: 1/end;
+    text-align: center;
 }
