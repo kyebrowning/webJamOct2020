@@ -198,3 +198,36 @@ li {
     grid-column: 1/end;
     text-align: center;
 }
+
+.maize-bkg {
+    height: 1000px;
+    grid-column: 1/end;
+    grid-row: 2/end;
+    background-color: #221e22;
+    background-image: url(../imgs/maize-runner.png);
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+}
+
+.maize-txt {
+    background-color: rgba(236, 167, 44, 1);
+    border: 15px solid #221e22;
+    border-radius: 5px;
+    height: 250px;
+    grid-column: 2;
+    align-self: center;
+    line-height: 250px;;
+}
+
+.maize-txt p {
+    text-align: center;
+    color: #221e22;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left:5px;
+    padding-right:5px;
+}
