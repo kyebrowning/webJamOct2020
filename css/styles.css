@@ -9,9 +9,10 @@ body{
 
 .container {
     display: grid;
-    grid-template-rows: 50px 1fr 1fr 1fr 1fr 250px;
+    grid-template-rows: 50px 1fr 1fr 1fr 150px;
     grid-template-columns: 15% auto 15%;
 }
+
 .topnav {
     grid-row: 1;
     grid-column: 1/end;
@@ -81,6 +82,11 @@ li {
 
 .hero-txt h1 {
     font-size: 45px;
+    margin-bottom: 0px;
+}
+
+.hero-txt h3 {
+    margin-top: 5px;
 }
 
 .hero-button {
@@ -95,7 +101,7 @@ li {
     border-radius: 5px;
 }
 
-.hero-button:hover {
+.hero-button:hover, .price-button:hover {
     background-color: #eca72c;
     color: #221e22;
 }
@@ -103,6 +109,7 @@ li {
 .calendar-container {
     height: 800px;
     grid-column: 1/end;
+    grid-row: 3;
     background-color: #31263E;
     display: grid;
     grid-template-columns: 15% auto 15%;
@@ -111,5 +118,66 @@ li {
 .calendar-img {
     grid-column: 2;
     justify-self: center;
-    padding-top: 50px;
+}
+
+.purple-clouds{
+    position: relative;
+    grid-column: 1/end;
+}
+
+.custom-shape-divider-top-1601775117 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1601775117 svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 1.3px);
+    height: 89px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1601775117 .shape-fill {
+    fill: #31263E;
+}
+
+.price-container {
+    height:800px;
+    grid-row: 4;
+    grid-column: 1/end;
+    background-color: #44355B;
+    display: grid;
+    grid-template-columns: auto 370px 8% 370px auto;
+    grid-template-rows: 10% auto 20%;
+    justify-content: center;
+}
+
+.friday-pass {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.weekend-pass {
+    grid-row: 2;
+    grid-column: 4;
+
+}
+
+.price-button {
+    grid-row: 3;
+    grid-column: 2/5;
+    height: 50px;
+    align-self: center;
+    width: 50%;
+    justify-self: center;
+    font-size: 24px;
+    background-color: transparent;
+    color: #eca72c;
+    border: 2px solid #eca72c;
+    border-radius: 5px;
 }
