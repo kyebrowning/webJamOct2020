@@ -58,7 +58,7 @@ li {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(49, 38, 62, 0.5), rgba(49, 38, 62, 0.9)), url('../imgs/background-image.jpg');
+    background-image: linear-gradient(rgba(49, 38, 62, 0.7), rgba(49, 38, 62, 1)), url('../imgs/background-image.jpg');
     height: 800px;
     background-position: center;
     background-repeat: no-repeat;
@@ -98,4 +98,18 @@ li {
 .hero-button:hover {
     background-color: #eca72c;
     color: #221e22;
+}
+
+.calendar-container {
+    height: 800px;
+    grid-column: 1/end;
+    background-color: #31263E;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+}
+
+.calendar-img {
+    grid-column: 2;
+    justify-self: center;
+    padding-top: 50px;
 }
