@@ -2,6 +2,8 @@
 
 Welcome to my submission for the October 2020 24hr Web Jam for Code Cavern. 
 
+My submission can be viewed here: https://kyebrowning.github.io/webJamOct2020/
+
 The criteria and scenario are as follows:
 
 * Websites may not use templates
